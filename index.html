@@ -480,18 +480,18 @@
                 <div class="hero-content">
                     <i class="fas fa-anchor" style="font-size: 48px; color:#b28bd2;"></i>
                     <h1>С днём рождения 🎂</h1>
-                    <p style="font-size: 1.3rem; max-width: 680px; margin: 20px auto;">Ты для меня - океан под палящим солнцем<br>Возможно немного too much, но я так хочу, потому что ты заслуживаешь всего</p>
+                    <p style="font-size: 1.3rem; max-width: 680px; margin: 20px auto;">Ты для меня - прохладный океан в знойный день<br>Мб немного too much? но я так хочу, поэтому самовольничаю <br><br>(а еще потому что ты заслуживаешь всего)</p>
                 </div>
             </div>
         </section>
 
         <section id="qualitiesSection">
-            <h2 class="section-title">Люблю в тебе</h2>
+            <h2 class="section-title">Очень люблю в тебе</h2>
             <div class="qualities-grid" id="qualitiesGrid"></div>
         </section>
 
         <section id="gallerySection">
-            <h2 class="section-title">Вайб моменты</h2>
+            <h2 class="section-title">То, что запомнилось</h2>
             <div class="gallery-grid" id="galleryGrid"></div>
         </section>
 
@@ -526,14 +526,14 @@
                     <h3>Главный подарок</h3>
                     <p>(помимо меня)</p>
                     <div class="secret-click" data-gift="main">Нажми, чтобы открыть</div>
-                    <div class="hidden-gift" id="mainGiftHidden"><strong>✨ Идем серфить! ✨</strong><br>Проведем время, пытаясь устоять на доске дольше 10 секунд в flow moscow (взяла серт, чтобы подобрать удобное время)</div>
+                    <div class="hidden-gift" id="mainGiftHidden"><strong>✨ Идем серфить! ✨</strong><br>Проведем время, пытаясь устоять на доске дольше 10 секунд в flow moscow (взяла серт, чтобы подобрать удобное время, кину в личку)</div>
                 </div>
                 <div class="gift-card">
                     <i class="fas fa-fish" style="font-size: 44px; color:#7f97d4;"></i>
                     <h3>Подарок поменьше</h3>
                     <p>(тут вкусное)</p>
                     <div class="secret-click" data-gift="vlad">Нажми, чтобы открыть</div>
-                    <div class="hidden-gift" id="vladGiftHidden">🍫 Шоколад с водорослями и птичье молоко от Приморского кондитера (еще надеюсь чипсы найду)</div>
+                    <div class="hidden-gift" id="vladGiftHidden"> Шоколад с водорослями и Птичье молоко от Приморского кондитера (еще надеюсь чипсы найду)</div>
                 </div>
                 <div class="gift-card">
                     <i class="fas fa-certificate" style="font-size: 44px; color:#bf86cf;"></i>
@@ -541,7 +541,7 @@
                     <p>(тут тупое но надеюсь милое)</p>
                     <div class="secret-click" data-gift="funny" id="unlockBonusesBtn">Жми давай</div>
                     <div class="hidden-gift" id="funnyGiftHidden">
-                        <p>😜 А вот бонусы выбирай ниже — они появились! 👇</p>
+                        <p>Выбирай ниже что то типа микробонусов👇</p>
                     </div>
                 </div>
             </div>
@@ -550,12 +550,12 @@
             <div class="micro-bonuses-section" id="microBonusesSection">
                 <div class="micro-bonuses-title">
                     <i class="fas fa-clipboard-list"></i>
-                    <span>✨ А теперь к бонусам — выбирай что душе угодно ✨</span>
+                    <span>✨ А теперь к бонусам — выбирай что приглянулось ✨</span>
                 </div>
                 <div class="bonus-check-grid" id="bonusCheckGrid"></div>
-                <button class="confirm-bonus-btn" id="confirmBonusesBtn">🎁 Подтвердить выбранные бонусы</button>
+                <button class="confirm-bonus-btn" id="confirmBonusesBtn"> Подтвердить</button>
                 <div class="bonus-result" id="bonusResultArea">
-                    💜 Выбери один или несколько бонусов и нажми на кнопку
+                    Под кодовыми словами зашифрованы микробонусы
                 </div>
             </div>
         </section>
@@ -576,19 +576,19 @@
         }
 
         const qualities = [
-            { name: "Чувство юмора", hearts: 5, desc: "Хоть ты и доводишь меня до хрюканья" },
-            { name: "Ум и спокойствие", hearts: 5, desc: "Восхищаюсь тобой и твоим подходом к жизни" },
+            { name: "Чувство юмора", hearts: 5, desc: "Хоть ты им и доводишь меня до хрюканья" },
+            { name: "Ум и спокойствие", hearts: 5, desc: "За все разговоры по душам - спасибо" },
             { name: "Заботу и нежность", hearts: 5, desc: "С тобой всегда уютно" },
             { name: "Уверенность", hearts: 5, desc: "В тебе, во мне и том, что ты хочешь" },
-            { name: "Любовь к родному городу", hearts: 4, desc: "Минус за то, что мы еще не едим хинкали том ям" },
-            { name: "Буллинг моего кота", hearts: 1, desc: "Он не избалованный!" }
+            { name: "Любовь к ВЛАДИВОСТОКУ", hearts: 4, desc: "Минус за то, что мы еще не едим хинкали том ям" },
+            { name: "Буллинг моего кота", hearts: 1, desc: "А вот это не люблю и он НЕ избалованный)" }
         ];
 
         const galleryImages = [
             { url: "https://lh3.googleusercontent.com/d/1weoNYUXtSBFr1905lLPBiN0doE2o1CsL", alt: "Камакура", caption: "Тот день в Камакуре" },
-            { url: "https://lh3.googleusercontent.com/d/1f_jwsl-Tmu6GyzEqIPiiTVuBn9axHwhK", alt: "Смешной момент", caption: "Так и кто свинка?" }, 
+            { url: "https://lh3.googleusercontent.com/d/1f_jwsl-Tmu6GyzEqIPiiTVuBn9axHwhK", alt: "Смешной момент", caption: "А свинка кто?" }, 
             { url:"https://lh3.googleusercontent.com/d/1TESFtsjEH340PoE52X9z4HnbrmPZDGJu", alt: "Первая фотка", caption: "Первая твоя (?) фотка в переписке" },
-            { url: "https://lh3.googleusercontent.com/d/1IpvJ8hKIOgxGwaxodM4f4FlQQFcm5dr-", alt: "Любимая фотка", caption: "Просто фотка, которая мне нравится" }
+            { url: "https://lh3.googleusercontent.com/d/10XsUOnP3brVKqNpgwI3Vljw3E80bQgxN", alt: "Любимая фотка", caption: "Просто фотка, которая мне нравится" }
         ];
 
         const memes = [
@@ -638,7 +638,7 @@
                     <img src="${escapeHtml(img.url)}" alt="${escapeHtml(img.alt)}" loading="lazy">
                     <div class="photo-overlay">${escapeHtml(img.caption)}</div>
                 `;
-                card.addEventListener('click', () => alert(`💜 ${img.caption} — наша история!`));
+                card.addEventListener('click', () => alert(` О, а вот тут сделаю пасхалку. Если увидел напиши мне Мяу для секретного комлемента`));
                 galleryContainer.appendChild(card);
             });
         }
@@ -696,7 +696,7 @@
                     resultDiv.innerHTML = '😿 Пока ничего не выбрано... Нажми на понравившийся бонус, чтобы отметить его!';
                     resultDiv.style.background = '#fff0f0';
                 } else {
-                    resultDiv.innerHTML = `🎉 Ты выбрал: <strong>${selected.join(', ')}</strong>. Жди исполнения! 🎉<br>💜 Спасибо, что выбрал именно эти :)`;
+                    resultDiv.innerHTML = `🎉 Ты выбрал: <strong>${selected.join(', ')}</strong>. Жди исполнения, ток кинь в личку что выбрал!)) 🎉`;
                     resultDiv.style.background = '#e6d9ff';
                     triggerConfetti();
                 }
